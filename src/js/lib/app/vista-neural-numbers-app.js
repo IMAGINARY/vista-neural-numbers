@@ -1,4 +1,7 @@
 import formatText from '../helpers-web/format-text';
+import initContent from '../init/init-content';
+import SlideShow from './slide-show';
+import hashSlideshowRouter from './hash-slideshow-router';
 
 export default class VistaNeuralNumbersApp {
   /**
@@ -27,6 +30,7 @@ export default class VistaNeuralNumbersApp {
    * @private
    */
   #lang = 'en';
+  #slideShow = null;
 
   constructor(config) {
     this.config = config;
@@ -39,6 +43,9 @@ export default class VistaNeuralNumbersApp {
         width: this.width,
         height: this.height,
       });
+
+    this.#slideShow = new SlideShow();
+    this.$element.append(this.#slideShow.$element);
   }
 
   /**
@@ -48,6 +55,8 @@ export default class VistaNeuralNumbersApp {
    */
   async init() {
     this.setLang(this.config.i18n.defaultLanguage);
+    initContent(this, this.#slideShow);
+    hashSlideshowRouter(this.#slideShow);
   }
 
   /**
