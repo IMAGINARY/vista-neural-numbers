@@ -1,0 +1,24 @@
+.slide-show-pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  .pager-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0; // Hide any text inside the button
+
+    &:hover {
+      background-color: #999;
+    }
+
+    &.active {
+      background-color: #333;
+    }
+  }
+}

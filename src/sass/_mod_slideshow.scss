@@ -1,0 +1,13 @@
+.slide-show {
+  position: relative;
+
+  .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    &.active {
+      display: block;
+    }
+  }
+}

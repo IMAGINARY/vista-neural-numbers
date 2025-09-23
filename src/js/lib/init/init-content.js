@@ -1,4 +1,4 @@
-import Slide from '../app/slide';
+import Slide from '../slide-show/slide';
 import slide1 from '../../../../content/slide-1-start.html';
 import slide2 from '../../../../content/slide-2-train.html';
 import slide3 from '../../../../content/slide-3-what-is-nn.html';

@@ -1,4 +1,4 @@
-export default function hashSlideshowRouter(slideshow) {
+export default function slideShowHashRouter(slideshow) {
   // When the slide changes, update the URL hash to reflect the current slide's id.
   // This does not trigger a hashchange event.
   slideshow.events.on('slideChanged', (index) => {

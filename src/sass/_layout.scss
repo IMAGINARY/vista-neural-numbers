@@ -1,0 +1,13 @@
+.app {
+  .slide-show {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide-show-pager {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
