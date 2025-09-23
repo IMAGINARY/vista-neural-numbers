@@ -1,0 +1,12 @@
+@use 'colors';
+@use 'type';
+
+.vista-neural-numbers {
+  background-color: colors.$color-bg;
+  color: colors.$color-text;
+  @include type.regular-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include type.heading-text;
+}

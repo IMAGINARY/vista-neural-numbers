@@ -1,0 +1,5 @@
+@use 'sass:meta';
+
+.theme-vista {
+  @include meta.load-css('vista/base');
+}

@@ -1,0 +1,9 @@
+@use 'fonts';
+
+@mixin regular-text {
+  @include fonts.apk-monogami-regular;
+}
+
+@mixin heading-text {
+  @include fonts.apk-monogami-bold;
+}
