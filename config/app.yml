@@ -1,0 +1,17 @@
+app:
+  display:
+    # The display resolution of the application.
+    # Note: This setting is not magical; Changing it will not necessarily achieve the results
+    # you expect.
+    width: 1920
+    height: 1080
+  ui:
+    # Time in seconds it takes for the training panel to appear or disappear
+    trainingPanelTransitionDuration: 0.3
+    # If true, will apply antialiasing for the training data
+    trainingAntialiasing: false
+  sentry:
+    # Sentry DSN for error tracking
+    # Override this value through settings.yml, not here.
+    # see README.md for alternatives.
+    # dsn: "xxx"

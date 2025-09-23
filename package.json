@@ -1,0 +1,53 @@
+{
+  "name": "vista-neural-numbers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IMAGINARY/vista-neural-numbers.git"
+  },
+  "author": "Eric Londaits <eric.londaits@imaginary.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IMAGINARY/vista-neural-numbers/issues"
+  },
+  "engines": {
+    "node": ">=24.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "stylelint": "^16.16.0",
+    "stylelint-config-standard-scss": "^14.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@sentry/browser": "^9.15.0",
+    "babel-loader": "^9.2.1",
+    "bootstrap": "^5.3.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "core-js": "^3.45.1",
+    "css-loader": "^6.7.4",
+    "deepmerge": "^4.3.1",
+    "degit": "^2.8.4",
+    "dotenv-webpack": "^8.1.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.4",
+    "jquery": "^3.7.1",
+    "js-yaml": "^4.1.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "sass": "^1.86.0",
+    "sass-loader": "^16.0.5",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "postinstall": "rm -rf vendor/neural-numbers && degit github:IMAGINARY/neural-numbers#v1.6.0 --force vendor/neural-numbers",
+    "build": "npx webpack",
+    "watch": "npx webpack --watch"
+  },
+  "private": true
+}

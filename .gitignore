@@ -1,0 +1,8 @@
+node_modules
+.babel-cache
+
+/vendor
+/dist
+/work
+
+!**/.gitkeep
