@@ -1,0 +1,9 @@
+@use 'colors';
+
+@mixin pill-button {
+  border-radius: 9999px;
+  border: none;
+  padding: 0rem 1.75rem;
+  background-color: colors.$violet;
+  color: colors.$white;
+}

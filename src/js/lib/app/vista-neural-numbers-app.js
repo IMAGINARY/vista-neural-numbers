@@ -1,8 +1,9 @@
 import formatText from '../helpers-web/format-text';
-import initContent from '../init/init-content';
 import SlideShow from '../slide-show/slide-show';
-import slideShowHashRouter from '../slide-show/slide-show-hash-router';
 import SlideShowPager from '../slide-show/slide-show-pager';
+import slideShowHashRouter from '../slide-show/slide-show-hash-router';
+import initContent from '../init/init-content';
+import LanguageSwitchButton from './language-switch-button';
 
 export default class VistaNeuralNumbersApp {
   /**
@@ -33,6 +34,9 @@ export default class VistaNeuralNumbersApp {
   #lang = 'en';
   #slideShow = null;
   #pager = null;
+  #utilityControls = null;
+  #langSwitchButton = null;
+  #resetButton = null;
 
   constructor(config) {
     this.config = config;
@@ -45,9 +49,31 @@ export default class VistaNeuralNumbersApp {
         width: this.width,
         height: this.height,
       });
+    this.setLang(this.config.i18n.defaultLanguage);
 
+    // Slide show
     this.#slideShow = new SlideShow();
     this.$element.append(this.#slideShow.$element);
+    initContent(this, this.#slideShow);
+    slideShowHashRouter(this.#slideShow);
+    // Slide show pager
+    this.#pager = new SlideShowPager(this.#slideShow);
+    this.$element.append(this.#pager.$element);
+    // Utility controls
+    this.#utilityControls = $('<div></div>')
+      .addClass('utility-controls');
+    this.$element.append(this.#utilityControls);
+    // Utility: Reset button
+    this.#resetButton = $('<button></button>')
+      .addClass('reset-button')
+      .attr('title', 'Reset')
+      .on('click', () => {
+        this.#slideShow.goToSlide(0);
+      })
+      .appendTo(this.#utilityControls);
+    // Utility: Language switcher
+    this.#langSwitchButton = new LanguageSwitchButton(this);
+    this.#langSwitchButton.$element.appendTo(this.#utilityControls);
   }
 
   /**
@@ -56,11 +82,7 @@ export default class VistaNeuralNumbersApp {
    * @return {Promise<void>}
    */
   async init() {
-    this.setLang(this.config.i18n.defaultLanguage);
-    initContent(this, this.#slideShow);
-    slideShowHashRouter(this.#slideShow);
-    this.#pager = new SlideShowPager(this.#slideShow);
-    this.$element.append(this.#pager.$element);
+    // Any asynchronous initialization will be done here.
   }
 
   /**

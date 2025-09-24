@@ -10,4 +10,17 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .utility-controls {
+    display: flex;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    z-index: 1000;
+    font-size: 2rem;
+
+    .language-switch-button {
+      margin-left: 0.5rem;
+    }
+  }
 }
