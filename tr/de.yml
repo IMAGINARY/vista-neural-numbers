@@ -1,1 +1,43 @@
-{}
+how-does-it-work-button: Wie funktioniert das?
+train-the-network-title: Trainiere das Netzwerk und probiere es dann nochmal!
+what-does-this-have-to-do-with-ai-button: Was hat das mit KI zu tun?
+what-is-a-neural-network-title: Was ist ein neuronales Netz?
+what-is-a-neural-network-text: |
+  <p>Ein künstliches neuronales Netz besteht aus Schichten verbundener Neuronen: Einer 
+  Eingabeschicht (Input), mittleren `versteckten` Schichten (Hidden Layers), und einer 
+  Ausgabeschicht (Output). Ein neuronales Netz verwandelt Daten, die man ihm gibt, in andere Daten. 
+  Wie genau es das macht, kommt auf die Verbindungen im Netz an.</p>
+  <p>Der Computer konstruiert im Training selbst die Verbindungen des Netzes, um an die Lösung zu 
+  kommen – Input und Output korrekt zu verbinden.</p>
+but-how-does-the-ai-do-this-button: Aber wie macht die KI das?
+what-is-training-data-title: Was sind Trainingsdaten?
+training-data-text-1: |
+  <p>Trainingsdaten sind die Grundlage dafür, dass ein neuronales Netz funktioniert. Es handelt sich 
+  dabei um eine große Menge an Beispieldaten (Inputs), kombiniert mit den richtigen Lösungen 
+  (Outputs).</p>
+  <p>Ohne Trainingsdaten sind neuronale Netze nutzlos. Für manche Trainingsdaten gibt es eigene 
+  Datenbanken. Jene aus dem Beispiel ’Ziffern erkennen’ sind aus der MNIST Datenbank für 
+  handgeschriebene Ziffern, die 70.000 Bilder handgeschriebener Ziffern enthält.</p>
+training-data-text-2: |
+  <p>Oft müssen Trainingsdaten erst einmal ‘bereinigt’ werden. Bei den Ziffern werden 
+  handgeschriebene Zahlen automatisch in die Bildmitte gesetzt und in 28x28 Pixel übersetzt. 
+  Probier’ es aus!</p>
+training-data-text-3: |
+  <p>Trainingsdaten haben auch ihre Tücken – bei den Ziffern sind die 1er und 7er beispielsweise 
+  amerikanisch geschrieben. Trainierte Netze haben Schwierigkeit, europäisch geschriebene 7er mit 
+  Mittelstrich zu erkennen. Das nennt sich Datenbias.</p>
+  <p>Mehr dazu im Deepdive!</p>
+how-does-a-neural-network-learn-title: Wie lernt ein neuronales Netz?
+how-does-a-neural-network-learn-text: |
+  <p>Am Anfang eines Trainings weiß ein neuronales Netz nichts. Es muss erst durch Ausprobieren 
+  passende ’Stärken’, genannt Gewichte, für die Verbindungen seiner vielen Neuronen finden. Im 
+  Training passiert das Schritt für Schritt.</p>
+  <p>Beim Beispiel der Ziffern werden die Gewichte des neuronalen Netzes ein klein wenig verändert. 
+  Dann bekommt das Netz ein Testbild (Input) gezeigt, und das Ergebnis (Output) des neuronalen 
+  Netzes wird mit der bekannten Lösung verglichen. Wenn das Ergebnis in die richtige Richtung geht, 
+  werden die Gewichte des Netzes weiter dorthin verändert. Wenn nicht, probiert das Netz etwas 
+  anderes aus.</p>
+  <p>Das wird so lange mit neuen Trainingsdaten wiederholt, bis die Ergebnisse gut genug sind.</p>
+  <p>Das neuronale Netz hat gelernt und kann das jetzt auch auf neuen, unbekannten Input 
+  anwenden.</p>
+back-to-start-button: Zurück zum Start

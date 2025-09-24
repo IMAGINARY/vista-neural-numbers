@@ -1,1 +1,39 @@
-{}
+how-does-it-work-button: How does it work?
+recognizer-placeholder: Schreib eine Zahl<br>zwischen 0&nbsp;und&nbsp;9</div>
+train-the-network-title: Train the network and then try again!
+what-does-this-have-to-do-with-ai-button: What does this have to do with AI?
+what-is-a-neural-network-title: What is a neural network?
+what-is-a-neural-network-text: |
+  <p>An artificial neural network consists of layers of connected neurons: an input layer, middle 
+  ‘hidden’ layers, and an output layer. Neural networks transform the data they receive into other 
+  data. How they do this depends on connections in the network.</p>
+  <p>During training, the computer itself constructs connections in the network to achieve the 
+  solution of connecting the input and output correctly.</p>
+but-how-does-the-ai-do-this-button: But how does the AI do that?
+what-is-training-data-title: What is training data?
+training-data-text-1: |
+  <p>Training data works as a basis for a neural network to function. It consists of a large amount 
+  of sample data (inputs) combined with the correct solutions (outputs).</p>
+  <p>Without training data, neural networks are useless. Some training data has its own databases. 
+  The data from the ‘digit recognition’ example comes from the MNIST database for handwritten digits, 
+  which contains 70,000 images of handwritten digits.</p>
+training-data-text-2: |
+  <p>Training data must often be ‘cleaned’ first. In the case of digits, handwritten numbers are 
+  automatically placed in the center of the image and converted into 28x28 pixels. Try it out!</p>
+training-data-text-3: |
+  <p>Training data also has its pitfalls—with digits, for example, the numbers 1 and 7 are written 
+  in the American style. Trained networks have difficulty recognizing European style 7s, which are
+  written with the addition of a center line. This is called data bias.</p> 
+  <p>More on this in the deep dive!</p>
+how-does-a-neural-network-learn-title: How does a neural network learn?
+how-does-a-neural-network-learn-text: |
+  <p>At the beginning of training, a neural network knows nothing. It must first find suitable 
+  weights to connect to its many neurons through trial and error. This occurs step by step during 
+  the training process.</p>
+  <p>With digits, the neural network’s weights are altered slightly. The network is then shown a 
+  test image (input), and the result (output) of the neural network is compared with the known 
+  solution. If the result is heading in the right direction, the network’s weights are further 
+  adjusted in that direction. If not, the network tries something else.</p>
+  <p>This is repeated with new training data until the results are satisfactory.</p>
+  <p>The neural network has learned and can now apply this to new, unknown input.</p>
+back-to-start-button: Back to the start
