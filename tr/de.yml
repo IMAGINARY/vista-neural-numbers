@@ -1,5 +1,8 @@
 how-does-it-work-button: Wie funktioniert das?
+recognizer-placeholder: Schreib eine Zahl<br>zwischen 0&nbsp;und&nbsp;9
 train-the-network-title: Trainiere das Netzwerk und probiere es dann nochmal!
+training-label-images-used: Verwendete Bilder
+training-label-predicted-accuracy: Vorhergesagte Genauigkeit
 what-does-this-have-to-do-with-ai-button: Was hat das mit KI zu tun?
 what-is-a-neural-network-title: Was ist ein neuronales Netz?
 what-is-a-neural-network-text: |

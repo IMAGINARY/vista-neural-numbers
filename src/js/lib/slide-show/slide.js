@@ -8,17 +8,23 @@ export default class Slide {
       .html(content);
   }
 
-  onEnter() {
+  async onInit() {
+    if (this.props.onInit) {
+      await this.props.onInit(this);
+    }
+  }
+
+  async onEnter() {
     if (this.props.onEnter) {
-      this.props.onEnter(this);
+      await this.props.onEnter(this);
     }
     this.$element.addClass('active');
   }
 
-  onExit() {
+  async onExit() {
     this.$element.removeClass('active');
     if (this.props.onExit) {
-      this.props.onExit(this);
+      await this.props.onExit(this);
     }
   }
 }

@@ -50,11 +50,18 @@ export default class VistaNeuralNumbersApp {
         height: this.height,
       });
     this.setLang(this.config.i18n.defaultLanguage);
+  }
 
+  /**
+   * Initializes the application.
+   *
+   * @return {Promise<void>}
+   */
+  async init() {
     // Slide show
     this.#slideShow = new SlideShow();
     this.$element.append(this.#slideShow.$element);
-    initContent(this, this.#slideShow);
+    await initContent(this, this.#slideShow);
     slideShowHashRouter(this.#slideShow);
     // Slide show pager
     this.#pager = new SlideShowPager(this.#slideShow);
@@ -74,15 +81,7 @@ export default class VistaNeuralNumbersApp {
     // Utility: Language switcher
     this.#langSwitchButton = new LanguageSwitchButton(this);
     this.#langSwitchButton.$element.appendTo(this.#utilityControls);
-  }
-
-  /**
-   * Initializes the application.
-   *
-   * @return {Promise<void>}
-   */
-  async init() {
-    // Any asynchronous initialization will be done here.
+    this.updateTexts();
   }
 
   /**

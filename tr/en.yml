@@ -1,6 +1,8 @@
 how-does-it-work-button: How does it work?
-recognizer-placeholder: Schreib eine Zahl<br>zwischen 0&nbsp;und&nbsp;9</div>
+recognizer-placeholder: Write a number<br>between 0&nbsp;und&nbsp;9
 train-the-network-title: Train the network and then try again!
+training-label-images-used: Images used
+training-label-predicted-accuracy: Predicted Accuracy
 what-does-this-have-to-do-with-ai-button: What does this have to do with AI?
 what-is-a-neural-network-title: What is a neural network?
 what-is-a-neural-network-text: |
