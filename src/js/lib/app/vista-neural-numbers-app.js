@@ -81,8 +81,26 @@ export default class VistaNeuralNumbersApp {
     // Utility: Language switcher
     this.#langSwitchButton = new LanguageSwitchButton(this);
     this.#langSwitchButton.$element.appendTo(this.#utilityControls);
+    this.initImages();
     this.updateTexts();
     this.hookInternalNavigation();
+  }
+
+  localizedSrc(path) {
+    const lang = this.getLang();
+    return path.replace('%lang%', lang);
+  }
+
+  initImages() {
+    this.$element.find('[data-image]').each((_, el) => {
+      const src = el.getAttribute('data-image');
+      if (src) {
+        const image = $('<img>')
+          .attr('src', this.localizedSrc(src))
+          .addClass('img-fluid');
+        $(el).append(image);
+      }
+    });
   }
 
   /**
@@ -130,6 +148,14 @@ export default class VistaNeuralNumbersApp {
       const textKey = $el.data('i18n-text');
       if (strings[textKey]) {
         $el.html(formatText(strings[textKey]));
+      }
+    });
+
+    this.$element.find('[data-image]').each((_, el) => {
+      const $el = $(el);
+      const src = $el.data('image');
+      if (src) {
+        $el.find('img').attr('src', this.localizedSrc(src));
       }
     });
   }

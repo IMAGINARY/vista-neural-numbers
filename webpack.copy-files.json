@@ -2,6 +2,11 @@
   "patterns": [
     {
       "from": "**",
+      "to": "../static/img-content",
+      "context": "static/img-content"
+    },
+    {
+      "from": "**",
       "to": "../vendor/jquery",
       "context": "node_modules/jquery/dist"
     },
