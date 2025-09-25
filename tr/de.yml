@@ -30,6 +30,7 @@ training-data-text-3: |
   amerikanisch geschrieben. Trainierte Netze haben Schwierigkeit, europäisch geschriebene 7er mit 
   Mittelstrich zu erkennen. Das nennt sich Datenbias.</p>
   <p>Mehr dazu im Deepdive!</p>
+how-does-ai-learn-from-data-button: Doch wie lernt eine KI aus Daten?
 how-does-a-neural-network-learn-title: Wie lernt ein neuronales Netz?
 how-does-a-neural-network-learn-text: |
   <p>Am Anfang eines Trainings weiß ein neuronales Netz nichts. Es muss erst durch Ausprobieren 

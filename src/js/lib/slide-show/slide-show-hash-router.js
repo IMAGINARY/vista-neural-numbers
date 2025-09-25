@@ -11,6 +11,7 @@ export default function slideShowHashRouter(slideshow) {
   // Handler for hashchange events.
   // This will change the slide to the one indicated by the hash.
   const hashChangeHandler = () => {
+    console.log('Hash changed:', window.location.hash);
     const hash = window.location.hash.slice(1);
     if (hash) {
       try {

@@ -45,8 +45,10 @@ export default class SlideShow {
       return;
     }
     if (this.currentSlideIndex >= 0) {
+      console.log(`Exiting slide ${this.currentSlideIndex}`);
       this.slides[this.currentSlideIndex].onExit();
     }
+    console.log(`Entering slide ${index}`);
     this.currentSlideIndex = index;
     this.slides[this.currentSlideIndex].onEnter();
     this.events.emit('slideChanged', this.currentSlideIndex);

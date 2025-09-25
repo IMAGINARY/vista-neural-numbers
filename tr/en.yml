@@ -27,6 +27,7 @@ training-data-text-3: |
   in the American style. Trained networks have difficulty recognizing European style 7s, which are
   written with the addition of a center line. This is called data bias.</p> 
   <p>More on this in the deep dive!</p>
+how-does-ai-learn-from-data-button: But how does AI learn from data?
 how-does-a-neural-network-learn-title: How does a neural network learn?
 how-does-a-neural-network-learn-text: |
   <p>At the beginning of training, a neural network knows nothing. It must first find suitable 
