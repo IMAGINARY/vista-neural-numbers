@@ -3,7 +3,24 @@
 @mixin pill-button {
   border-radius: 9999px;
   border: none;
-  padding: 0rem 1.75rem;
   background-color: colors.$violet;
   color: colors.$white;
+  font-size: 2.5rem;
+  min-width: 2.75em;
+  padding: 0.9rem 2rem 0.6rem;
+  line-height: 1;
+}
+
+@mixin pill-button-outline {
+  border-radius: 9999px;
+  border: 2px solid colors.$violet;
+  padding: 0.9rem 2rem 0.6rem;
+  background-color: transparent;
+  color: colors.$violet;
+  font-size: 2rem;
+  text-decoration: none;
+
+  &:active {
+    background-color: colors.$gray-light;
+  }
 }

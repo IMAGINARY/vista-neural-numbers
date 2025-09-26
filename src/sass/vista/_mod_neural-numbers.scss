@@ -1,0 +1,55 @@
+@use 'colors';
+@use 'type';
+
+.neural-numbers-component {
+  @include type.heading-text;
+
+  .bar {
+    background-color: colors.$color-accent;
+    border: none;
+    width: 1.5em;
+  }
+
+  .barcontainer {
+    margin: 0 2px;
+  }
+
+  .bartxt {
+    margin-top: 0.2em;
+    font-weight: 400;
+    font-size: 2rem;
+    color: colors.$black;
+  }
+
+  .input-canvas-wrapper {
+    border-color: colors.$black;
+  }
+
+  .input-placeholder {
+    line-height: 1.1;
+    color: colors.$black;
+  }
+
+  .output-wrapper {
+    .digit {
+      border: 8px dashed colors.$gray;
+      border-radius: 8px;
+    }
+  }
+}
+
+.neural-numbers-training-component {
+  background-color: colors.$gray-light;
+
+  .training-progress {
+    @include type.heading-text;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    min-width: 22em;
+
+    .image-count-value,
+    .accuracy-value {
+      font-size: 1.7rem;
+    }
+  }
+}

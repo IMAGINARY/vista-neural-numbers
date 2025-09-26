@@ -1,0 +1,104 @@
+$nn-component-size: 18rem;
+$nn-component-bars-height: $nn-component-size * 0.75;
+$nn-component-bars-width: 32rem;
+
+.neural-numbers-panel {
+  margin-top: 9rem;
+  text-align: center;
+
+  .neural-numbers-component {
+    align-items: flex-end;
+    height: auto;
+
+    .stage {
+      margin-right: 5rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .input-canvas-wrapper {
+      width: $nn-component-size;
+      height: $nn-component-size;
+    }
+
+    .input-canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    .output-wrapper {
+      width: $nn-component-size;
+      height: $nn-component-size;
+
+      .digit {
+        width: 100%;
+        height: 100%;
+        line-height: $nn-component-size;
+        font-size: 11.3rem;
+      }
+    }
+
+    .bars {
+      width: $nn-component-bars-width;
+      height: 12rem;
+      padding: 0 0.5rem;
+    }
+
+    .bar {
+      min-height: 3px;
+    }
+
+    .input-placeholder {
+      width: $nn-component-size;
+      height: $nn-component-size;
+      line-height: 1.75;
+      font-size: 2rem;
+    }
+  }
+
+  .neural-numbers-training-component {
+    display: inline-flex;
+    justify-content: center;
+    width: auto;
+    margin: 3rem auto;
+    border-radius: 9999em;
+    padding: 1rem 1.4rem;
+
+    .start-pause-btn {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    .reset-btn, .step-btn {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+
+    .training-progress {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      .image-count {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.normalizing-demo {
+  .neural-numbers-component .stage {
+    margin-right: 2rem;
+  }
+
+  .neural-numbers-component.with-normalizer .stage-normalize {
+    margin-right: 0;
+
+    .normalizecanvas {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

@@ -1,25 +1,32 @@
-<div class="container-fluid">
+<div class="container-fluid d-flex h-100 flex-column">
   <div class="row">
     <div class="col">
       <h1 data-i18n-text="what-is-training-data-title"></h1>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <div data-i18n-text="training-data-text-1"></div>
-      <div data-image='static/img-content/mnist-training-data.png'></div>
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <div data-image='static/img-content/mnist-training-data.png' class="mb-3 pe-5"></div>
+      <div data-i18n-text="training-data-text-1" class="pe-4 ps-3"></div>
     </div>
-    <div class="col">
+    <div class="col-3 me-5">
       <div data-i18n-text="training-data-text-2"></div>
+      <div data-i18n-text="training-data-text-4"></div>
     </div>
-    <div class="col">
-      <div data-component="neural-numbers-normalizer" data-placeholder-id="recognizer-placeholder"></div>
+    <div class="col-3 ms-5">
       <div data-i18n-text="training-data-text-3"></div>
+      <div class="mt-5">
+        <div class="normalizing-demo">
+          <div data-component="neural-numbers-normalizer" data-placeholder-id="recognizer-placeholder"></div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-auto mb-nav">
     <div class="col">
-      <a href="#how-neural-networks-learn" class='button-nav' data-i18n-text="how-does-ai-learn-from-data-button"></a>
+      <div class="text-center">
+        <a href="#how-neural-networks-learn" class='button-nav' data-i18n-text="how-does-ai-learn-from-data-button"></a>
+      </div>
     </div>
   </div>
 </div>

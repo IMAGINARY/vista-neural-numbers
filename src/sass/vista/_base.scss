@@ -2,14 +2,30 @@
 @use 'type';
 @use 'ui';
 
-.vista-neural-numbers {
+.vista-neural-numbers-app {
   background-color: colors.$color-bg;
   color: colors.$color-text;
   @include type.regular-text;
+  font-size: 1.25rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   @include type.heading-text;
+}
+
+$h1-height: 3rem;
+h1 {
+  font-size: $h1-height;
+  margin-bottom: 1.5em;
+}
+
+.blank-h1 {
+  height: 3.6rem;
+  margin: 3rem 0 0;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 .language-switch-button {
@@ -21,6 +37,36 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url('../../static/img/pfeil-weiss.svg');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 57%;
-  padding: 0 1em;
+  background-size: 42%;
+}
+
+.button-nav {
+  @include ui.pill-button-outline;
+}
+
+.mb-nav {
+  /* Spacing for navigation */
+  margin-bottom: 9rem;
+}
+
+.slide-show-pager {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: colors.$gray;
+    z-index: -1;
+  }
+
+  .pager-button {
+    background-color: colors.$gray;
+
+    &.active {
+      background-color: colors.$color-accent;
+    }
+  }
 }

@@ -2,4 +2,5 @@
 
 .theme-vista {
   @include meta.load-css('vista/base');
+  @include meta.load-css('vista/mod_neural-numbers');
 }

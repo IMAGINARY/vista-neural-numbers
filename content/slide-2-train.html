@@ -1,14 +1,18 @@
-<div class="container-fluid">
+<div class="container-fluid d-flex h-100 flex-column">
   <div class="row">
     <div class="col">
       <h1 data-i18n-text="train-the-network-title"></h1>
-      <div data-component="neural-numbers" data-placeholder-id="recognizer-placeholder"></div>
-      <div data-component="neural-numbers-training-ui"></div>
+      <div class="neural-numbers-panel">
+        <div data-component="neural-numbers" data-placeholder-id="recognizer-placeholder"></div>
+        <div data-component="neural-numbers-training-ui"></div>
+      </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-auto mb-nav">
     <div class="col">
-      <a href="#what-is-a-neural-network" class='button-nav' data-i18n-text="what-does-this-have-to-do-with-ai-button"></a>
+      <div class="text-center">
+        <a href="#what-is-a-neural-network" class='button-nav' data-i18n-text="what-does-this-have-to-do-with-ai-button"></a>
+      </div>
     </div>
   </div>
 </div>

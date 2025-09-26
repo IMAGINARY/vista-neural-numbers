@@ -1,8 +1,8 @@
 how-does-it-work-button: Wie funktioniert das?
 recognizer-placeholder: Schreib eine Zahl<br>zwischen 0&nbsp;und&nbsp;9
 train-the-network-title: Trainiere das Netzwerk und probiere es dann nochmal!
-training-label-images-used: Verwendete Bilder
-training-label-predicted-accuracy: Vorhergesagte Genauigkeit
+training-label-images-used: 'Verwendete Bilder: '
+training-label-predicted-accuracy: 'Vorhergesagte Genauigkeit: '
 what-does-this-have-to-do-with-ai-button: Was hat das mit KI zu tun?
 what-is-a-neural-network-title: Was ist ein neuronales Netz?
 what-is-a-neural-network-text: |
@@ -18,18 +18,18 @@ training-data-text-1: |
   <p>Trainingsdaten sind die Grundlage dafür, dass ein neuronales Netz funktioniert. Es handelt sich 
   dabei um eine große Menge an Beispieldaten (Inputs), kombiniert mit den richtigen Lösungen 
   (Outputs).</p>
+training-data-text-2: |
   <p>Ohne Trainingsdaten sind neuronale Netze nutzlos. Für manche Trainingsdaten gibt es eigene 
   Datenbanken. Jene aus dem Beispiel ’Ziffern erkennen’ sind aus der MNIST Datenbank für 
   handgeschriebene Ziffern, die 70.000 Bilder handgeschriebener Ziffern enthält.</p>
-training-data-text-2: |
+training-data-text-3: |
   <p>Oft müssen Trainingsdaten erst einmal ‘bereinigt’ werden. Bei den Ziffern werden 
   handgeschriebene Zahlen automatisch in die Bildmitte gesetzt und in 28x28 Pixel übersetzt. 
   Probier’ es aus!</p>
-training-data-text-3: |
+training-data-text-4: |
   <p>Trainingsdaten haben auch ihre Tücken – bei den Ziffern sind die 1er und 7er beispielsweise 
   amerikanisch geschrieben. Trainierte Netze haben Schwierigkeit, europäisch geschriebene 7er mit 
   Mittelstrich zu erkennen. Das nennt sich Datenbias.</p>
-  <p>Mehr dazu im Deepdive!</p>
 how-does-ai-learn-from-data-button: Doch wie lernt eine KI aus Daten?
 how-does-a-neural-network-learn-title: Wie lernt ein neuronales Netz?
 how-does-a-neural-network-learn-text: |

@@ -147,7 +147,7 @@ export default class VistaNeuralNumbersApp {
       const $el = $(el);
       const textKey = $el.data('i18n-text');
       if (strings[textKey]) {
-        $el.html(formatText(strings[textKey]));
+        $el.html(strings[textKey]);
       }
     });
 
